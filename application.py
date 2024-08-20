@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 import pickle 
 
-book_name = pickle.load(open("c:/Users/Hp/Desktop/book-recommender/.venv/book_list.pkl",'rb'))
-similarity = pickle.load(open("c:/Users/Hp/Desktop/book-recommender/.venv/similarity.pkl",'rb'))
+book_name = pickle.load(open("c:/Users/Hp/Desktop/book-recommender/book_list.pkl",'rb'))
+similarity = pickle.load(open("c:/Users/Hp/Desktop/book-recommender/similarity.pkl",'rb'))
 book = pd.DataFrame(book_name)
 
 def recommend(book_name):
